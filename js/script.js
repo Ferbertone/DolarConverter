@@ -45,14 +45,12 @@ function buscarDolares() {
     .then((datos) => {
         arrayDolares.length = 0;
         arrayDolares.push(...datos);
-        console.log(arrayDolares);
         listarDolares();
     })
 }
 buscarDolares()
 
 function Convertir() {
-    console.log("asd");
     const InputConvertir = document.querySelector("input#MontoConvertir");
     montoConvertido.innerHTML = ""
     var  montoAConvertir= InputConvertir.value
@@ -64,5 +62,4 @@ function Convertir() {
             montoConvertido.innerHTML = `<h2>Monto en dolar blue: ${resultado}</h2>`
         }, 3000)
     }
-    console.log(resultado);
 }
